@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  start: 2016-12-06
+  end: 2016-12-06
+  location: MyString
+  quote: 1.5
+  paid: false
+  customer_id: 
+
+two:
+  name: MyString
+  description: MyText
+  start: 2016-12-06
+  end: 2016-12-06
+  location: MyString
+  quote: 1.5
+  paid: false
+  customer_id: 
