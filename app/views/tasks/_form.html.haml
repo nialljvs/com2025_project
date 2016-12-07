@@ -17,6 +17,7 @@
     = f.text_field :quote
   .field
     = f.label :event
-    = f.text_field :event
+    %p= @task.event.name
+    = f.hidden_field :event_id, value: @task.event_id
   .actions
     = f.submit 'Save'

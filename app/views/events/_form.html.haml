@@ -30,5 +30,6 @@
   .field
     = f.label :customer
     %p=@event.customer.forename + " " + @event.customer.surname
+    = f.hidden_field :customer_id, value: @event.customer_id
   .actions
     = f.submit 'Save'

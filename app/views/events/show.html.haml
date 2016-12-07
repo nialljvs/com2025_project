@@ -25,6 +25,8 @@
   %b Customer:
   = @event.customer.forename + ' ' + @event.customer.surname
 
+= link_to 'Add Task', new_task_path(event_id: @event)
+
 = link_to 'Edit', edit_event_path(@event)
 \|
 = link_to 'Back', events_path

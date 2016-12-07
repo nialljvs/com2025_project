@@ -68,7 +68,7 @@ class EventsController < ApplicationController
     end
     
     def set_customer
-      @customer = Customer.find_by(id: params[:customer_id]) ||Customer.find(event_params[:customer_id])
+      @customer = Customer.find_by(id: params[:customer_id]) || Customer.find(event_params[:customer_id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
