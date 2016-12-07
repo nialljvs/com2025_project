@@ -23,7 +23,7 @@
   = @event.paid
 %p
   %b Customer:
-  = @event.customer
+  = @event.customer.forename + ' ' + @event.customer.surname
 
 = link_to 'Edit', edit_event_path(@event)
 \|

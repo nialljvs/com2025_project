@@ -12,6 +12,8 @@
 %p
   %b Phone:
   = @customer.phone
+  
+= link_to 'Add Event', new_event_path(customer_id: @customer)
 
 = link_to 'Edit', edit_customer_path(@customer)
 \|

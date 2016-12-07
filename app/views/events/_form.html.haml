@@ -29,6 +29,6 @@
     = f.check_box :paid
   .field
     = f.label :customer
-    = f.text_field :customer
+    %p=@event.customer.forename + " " + @event.customer.surname
   .actions
     = f.submit 'Save'
