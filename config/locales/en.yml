@@ -42,5 +42,5 @@ en:
       submit: Contact Us
       
     request_contact:
-      no_email: You must supply an email address
+      generic_blank: Please ensure no fields are left blank.
       email_sent: Thank you. We will be in touch shortly.

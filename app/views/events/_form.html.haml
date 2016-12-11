@@ -26,10 +26,18 @@
     = f.text_field :quote
   .field
     = f.label :paid
-    = f.check_box :paid
+    = f.check_box :paid, :id => "paidChkbox"
   .field
     = f.label :customer
     %p=@event.customer.forename + " " + @event.customer.surname
     = f.hidden_field :customer_id, value: @event.customer_id
   .actions
     = f.submit 'Save'
+
+:javascript
+  $(document).ready(function() {
+    $('#paidChkbox').change(function(){
+      cb = $(this);
+      cb.val(cb.prop('checked'));
+    });
+  });

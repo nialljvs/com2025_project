@@ -18,7 +18,7 @@ class CustomersControllerTest < ActionController::TestCase
 
   test "should create customer" do
     assert_difference('Customer.count') do
-      post :create, customer: { email: @customer.email, forename: @customer.forename, phone: @customer.phone, surname: @customer.surname }
+      post :create, customer: { email: @customer.email + "12", forename: @customer.forename, phone: @customer.phone, surname: @customer.surname }
     end
 
     assert_redirected_to customer_path(assigns(:customer))

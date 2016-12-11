@@ -11,7 +11,7 @@
   = @task.quote
 %p
   %b Event:
-  = @task.event.name
+  = link_to @task.event.name, @task.event
 
 = link_to 'Edit', edit_task_path(@task)
 \|

@@ -8,7 +8,7 @@ one:
   location: MyString
   quote: 1.5
   paid: false
-  customer_id: 
+  customer: one
 
 two:
   name: MyString
@@ -18,4 +18,4 @@ two:
   location: MyString
   quote: 1.5
   paid: false
-  customer_id: 
+  customer: two

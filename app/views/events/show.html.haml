@@ -23,7 +23,7 @@
   = @event.paid
 %p
   %b Customer:
-  = @event.customer.forename + ' ' + @event.customer.surname
+  = link_to @event.customer.forename + ' ' + @event.customer.surname, @event.customer
 
 = link_to 'Add Task', new_task_path(event_id: @event)
 
