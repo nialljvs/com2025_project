@@ -26,9 +26,9 @@
         %td= event.quote
         %td= event.paid
         %td= link_to event.customer.forename + " " + event.customer.surname, event.customer
-        %td= link_to t(".lnkShow"), event
-        %td= link_to t(".lnkEdit"), edit_event_path(event)
-        %td= link_to t(".lnkDestroy"), event, :method => :delete, :data => { :confirm => t(".confirm") }
+        %td= link_to t("lnkShow"), event
+        %td= link_to t("lnkEdit"), edit_event_path(event)
+        %td= link_to t("lnkDestroy"), event, :method => :delete, :data => { :confirm => t("confirm") }
 
 %br
 

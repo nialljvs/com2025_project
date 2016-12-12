@@ -18,9 +18,9 @@
         %td= task.description
         %td= task.quote
         %td= link_to task.event.name, task.event
-        %td= link_to t(".lnkShow"), task
-        %td= link_to t(".lnkEdit"), edit_task_path(task)
-        %td= link_to t(".lnkDestroy"), task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t("lnkShow"), task
+        %td= link_to t("lnkEdit"), edit_task_path(task)
+        %td= link_to t("lnkDestroy"), task, :method => :delete, :data => { :confirm => t("confirm") }
 
 %br
 

@@ -22,7 +22,13 @@
 en:
   app_title: Event Management
   app_description: The Corporate Event Organiser
-  
+  lnkShow: Show
+  lnkBack: Back
+  prohibited: ' prohibited this customer from being saved:'
+  btnSave: Save
+  lnkEdit: Edit
+  lnkDestroy: Destroy
+  confirm: Are you sure?
   home:
     home:
       title: Events - Home
@@ -58,34 +64,25 @@ en:
     destroy:
       destoyed_message: Customer was successfully destroyed.
     form:
-      prohibited: ' prohibited this customer from being saved:'
-      btnSave: Save
+      
     edit:
       title: Editing Customer
-      lnkShow: Show
-      lnkBack: Back
+      
     index:
       title: Listing Customers
       th1: Forename
       th2: Surname
       th3: Email
       th4: Phone
-      lnkShow: Show
-      lnkEdit: Edit
-      lnkDestroy: Destroy
       lnkNew: New Customer
-      confirm: Are you sure?
     new:
       title: New Customer
-      lnkBack: Back
     show:
       f1: 'Forename: '
       f2: 'Surname: '
       f3: 'Email: '
       f4: 'Phone: '
       lnkAdd: Add Event
-      lnkEdit: Edit
-      lnkBack: Back
       
   events:
     create:
@@ -95,12 +92,10 @@ en:
     destroy:
       destoyed_message: Event was successfully destroyed.
     form:
-      prohibited: ' prohibited this customer from being saved:'
-      btnSave: Save
+      
     edit:
       title: Editing Event
-      lnkShow: Show
-      lnkBack: Back
+      
     index:
       title: Listing Events
       h1: Name
@@ -111,14 +106,9 @@ en:
       h6: Quote
       h7: Paid
       h8: Customer
-      lnkShow: Show
-      lnkEdit: Edit
-      lnkDestroy: Destroy
       lnkNew: New Event
-      confirm: Are you sure?
     new:
       title: New Event
-      lnkBack: Back
     show:
       f1: 'Name: '
       f2: 'Description: '
@@ -129,8 +119,6 @@ en:
       f7: 'Paid: '
       f8: 'Customer: '
       lnkAdd: Add Task
-      lnkEdit: Edit
-      lnkBack: Back
       
   tasks:
     create:
@@ -140,39 +128,30 @@ en:
     destroy:
       destoyed_message: Task was successfully destroyed.
     form:
-      prohibited: ' prohibited this customer from being saved:'
-      btnSave: Save
+
     edit:
       title: Editing Task
-      lnkShow: Show
-      lnkBack: Back
     index:
       title: Listing Tasks
       th1: Name
       th2: Description
       th3: Quote
       th4: Event
-      lnkShow: Show
-      lnkEdit: Edit
-      lnkDestroy: Destroy
       lnkNew: New Task
-      confirm: Are you sure?
     new:
       title: New Task
-      lnkBack: Back
     show:
       f1: 'Name: '
       f2: 'Description: '
       f3: 'Quote: '
       f4: 'Even: '
-      lnkEdit: Edit
-      lnkBack: Back
       
   contact:
     name: 'Name:'
     email: 'Email:'
     telephone: 'Telephone:'
     regards: 'Thanks,'
+    request: "Could you get in touch with me please?"
     
   shared:
     header:
