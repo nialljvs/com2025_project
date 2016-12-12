@@ -1,16 +1,16 @@
-%h1 Listing events
+%h1= t(".title")
 
 %table
   %thead
     %tr
-      %th Name
-      %th Description
-      %th Start
-      %th End
-      %th Location
-      %th Quote
-      %th Paid
-      %th Customer
+      %th= t(".h1")
+      %th= t(".h2")
+      %th= t(".h3")
+      %th= t(".h4")
+      %th= t(".h5")
+      %th= t(".h6")
+      %th= t(".h7")
+      %th= t(".h8")
       %th
       %th
       %th
@@ -26,10 +26,10 @@
         %td= event.quote
         %td= event.paid
         %td= link_to event.customer.forename + " " + event.customer.surname, event.customer
-        %td= link_to 'Show', event
-        %td= link_to 'Edit', edit_event_path(event)
-        %td= link_to 'Destroy', event, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t(".lnkShow"), event
+        %td= link_to t(".lnkEdit"), edit_event_path(event)
+        %td= link_to t(".lnkDestroy"), event, :method => :delete, :data => { :confirm => t(".confirm") }
 
 %br
 
-= link_to 'New Event', new_event_path
+= link_to t(".lnkNew"), new_event_path

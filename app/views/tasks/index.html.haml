@@ -1,12 +1,12 @@
-%h1 Listing tasks
+%h1= t(".title")
 
 %table
   %thead
     %tr
-      %th Name
-      %th Description
-      %th Quote
-      %th Event
+      %th= t(".th1")
+      %th= t(".th2")
+      %th= t(".th3")
+      %th= t(".th4")
       %th
       %th
       %th
@@ -18,10 +18,10 @@
         %td= task.description
         %td= task.quote
         %td= link_to task.event.name, task.event
-        %td= link_to 'Show', task
-        %td= link_to 'Edit', edit_task_path(task)
-        %td= link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t(".lnkShow"), task
+        %td= link_to t(".lnkEdit"), edit_task_path(task)
+        %td= link_to t(".lnkDestroy"), task, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
-= link_to 'New Task', new_task_path
+= link_to t(".lnkNew"), new_task_path

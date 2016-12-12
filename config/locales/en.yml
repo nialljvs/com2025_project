@@ -33,14 +33,152 @@ en:
       contact_us: Complete the following form to get in touch with us.
       name: "Name:"
       enter_name: Enter your name
+      ph1: Matthew Casey
       email: "Email:"
       enter_email: Enter your email address
+      ph2: m.casey@gmail.com
       telephone: "Telephone:"
       enter_telephone: Enter your telephone number
+      ph3: 1234567890
       message: "Message:"
       enter_message: What do you want to say?
+      ph4: Example Message
       submit: Contact Us
       
     request_contact:
       generic_blank: Please ensure no fields are left blank.
       email_sent: Thank you. We will be in touch shortly.
+      
+      
+  customers:
+    create:
+      created_message: Customer was successfully created.
+    update:
+      updated_message: Customer was successfully updated.
+    destroy:
+      destoyed_message: Customer was successfully destroyed.
+    form:
+      prohibited: ' prohibited this customer from being saved:'
+      btnSave: Save
+    edit:
+      title: Editing Customer
+      lnkShow: Show
+      lnkBack: Back
+    index:
+      title: Listing Customers
+      th1: Forename
+      th2: Surname
+      th3: Email
+      th4: Phone
+      lnkShow: Show
+      lnkEdit: Edit
+      lnkDestroy: Destroy
+      lnkNew: New Customer
+      confirm: Are you sure?
+    new:
+      title: New Customer
+      lnkBack: Back
+    show:
+      f1: 'Forename: '
+      f2: 'Surname: '
+      f3: 'Email: '
+      f4: 'Phone: '
+      lnkAdd: Add Event
+      lnkEdit: Edit
+      lnkBack: Back
+      
+  events:
+    create:
+      created_message: Event was successfully created.
+    update:
+      updated_message: Event was successfully updated.
+    destroy:
+      destoyed_message: Event was successfully destroyed.
+    form:
+      prohibited: ' prohibited this customer from being saved:'
+      btnSave: Save
+    edit:
+      title: Editing Event
+      lnkShow: Show
+      lnkBack: Back
+    index:
+      title: Listing Events
+      h1: Name
+      h2: Description
+      h3: Start
+      h4: End
+      h5: Location
+      h6: Quote
+      h7: Paid
+      h8: Customer
+      lnkShow: Show
+      lnkEdit: Edit
+      lnkDestroy: Destroy
+      lnkNew: New Event
+      confirm: Are you sure?
+    new:
+      title: New Event
+      lnkBack: Back
+    show:
+      f1: 'Name: '
+      f2: 'Description: '
+      f3: 'Start: '
+      f4: 'End: '
+      f5: 'Location: '
+      f6: 'Quote: '
+      f7: 'Paid: '
+      f8: 'Customer: '
+      lnkAdd: Add Task
+      lnkEdit: Edit
+      lnkBack: Back
+      
+  tasks:
+    create:
+      created_message: Task was successfully created.
+    update:
+      updated_message: Task was successfully updated.
+    destroy:
+      destoyed_message: Task was successfully destroyed.
+    form:
+      prohibited: ' prohibited this customer from being saved:'
+      btnSave: Save
+    edit:
+      title: Editing Task
+      lnkShow: Show
+      lnkBack: Back
+    index:
+      title: Listing Tasks
+      th1: Name
+      th2: Description
+      th3: Quote
+      th4: Event
+      lnkShow: Show
+      lnkEdit: Edit
+      lnkDestroy: Destroy
+      lnkNew: New Task
+      confirm: Are you sure?
+    new:
+      title: New Task
+      lnkBack: Back
+    show:
+      f1: 'Name: '
+      f2: 'Description: '
+      f3: 'Quote: '
+      f4: 'Even: '
+      lnkEdit: Edit
+      lnkBack: Back
+      
+  contact:
+    name: 'Name:'
+    email: 'Email:'
+    telephone: 'Telephone:'
+    regards: 'Thanks,'
+    
+  shared:
+    header:
+      h1: Customers
+      h2: Events
+      h3: Tasks
+      h4: Contact
+      customer_href: /customers
+      

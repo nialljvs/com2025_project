@@ -1,32 +1,32 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b= t(".f1")
   = @event.name
 %p
-  %b Description:
+  %b= t(".f2")
   = @event.description
 %p
-  %b Start:
+  %b= t(".f3")
   = @event.start
 %p
-  %b End:
+  %b= t(".f4")
   = @event.end
 %p
-  %b Location:
+  %b= t(".f5")
   = @event.location
 %p
-  %b Quote:
+  %b= t(".f6")
   = @event.quote
 %p
-  %b Paid:
+  %b= t(".f7")
   = @event.paid
 %p
-  %b Customer:
+  %b= t(".f8")
   = link_to @event.customer.forename + ' ' + @event.customer.surname, @event.customer
 
-= link_to 'Add Task', new_task_path(event_id: @event)
+= link_to t(".lnkAdd"), new_task_path(event_id: @event)
 
-= link_to 'Edit', edit_event_path(@event)
+= link_to t(".lnkEdit"), edit_event_path(@event)
 \|
-= link_to 'Back', events_path
+= link_to t("lnkBack"), events_path

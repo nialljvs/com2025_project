@@ -1,18 +1,18 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b= t(".f1")
   = @task.name
 %p
-  %b Description:
+  %b= t(".f2")
   = @task.description
 %p
-  %b Quote:
+  %b= t(".f3")
   = @task.quote
 %p
-  %b Event:
+  %b= t(".f4")
   = link_to @task.event.name, @task.event
 
-= link_to 'Edit', edit_task_path(@task)
+= link_to t(".lnkEdit"), edit_task_path(@task)
 \|
-= link_to 'Back', tasks_path
+= link_to t(".lnkBack"), tasks_path

@@ -1,7 +1,7 @@
 = form_for @task do |f|
   - if @task.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@task.errors.count, "error")} prohibited this task from being saved:"
+      %h2= "#{pluralize(@task.errors.count, "error")}" + t(".prohibited")
       %ul
         - @task.errors.full_messages.each do |msg|
           %li= msg
@@ -20,4 +20,4 @@
     %p= @task.event.name
     = f.hidden_field :event_id, value: @task.event_id
   .actions
-    = f.submit 'Save'
+    = f.submit t(".btnSave")

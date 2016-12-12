@@ -1,12 +1,12 @@
-%h1 Listing customers
+%h1= t(".title")
 
 %table
   %thead
     %tr
-      %th Forename
-      %th Surname
-      %th Email
-      %th Phone
+      %th= t(".th1")
+      %th= t(".th2")
+      %th= t(".th3")
+      %th= t(".th4")
       %th
       %th
       %th
@@ -18,10 +18,10 @@
         %td= customer.surname
         %td= customer.email
         %td= customer.phone
-        %td= link_to 'Show', customer
-        %td= link_to 'Edit', edit_customer_path(customer)
-        %td= link_to 'Destroy', customer, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t(".lnkShow"), customer
+        %td= link_to t(".lnkEdit"), edit_customer_path(customer)
+        %td= link_to t(".lnkDestroy"), customer, :method => :delete, :data => { :confirm => t(".confirm") }
 
 %br
 
-= link_to 'New Customer', new_customer_path
+= link_to t(".lnkNew"), new_customer_path

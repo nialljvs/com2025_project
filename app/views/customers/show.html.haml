@@ -1,20 +1,20 @@
 %p#notice= notice
 
 %p
-  %b Forename:
+  %b= t(".f1")
   = @customer.forename
 %p
-  %b Surname:
+  %b= t(".f2")
   = @customer.surname
 %p
-  %b Email:
+  %b= t(".f3")
   = @customer.email
 %p
-  %b Phone:
+  %b= t(".f4")
   = @customer.phone
   
-= link_to 'Add Event', new_event_path(customer_id: @customer)
+= link_to t(".lnkAdd"), new_event_path(customer_id: @customer)
 
-= link_to 'Edit', edit_customer_path(@customer)
+= link_to t(".lnkEdit"), edit_customer_path(@customer)
 \|
-= link_to 'Back', customers_path
+= link_to t(".lnkBack"), customers_path

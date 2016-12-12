@@ -4,13 +4,13 @@
 %nav.navbar.navbar-inverse
   .container-fluid
     .navbar-header
-      %a.navbar-brand{:href => "/"} Event Management
+      %a.navbar-brand{:href => "/"}= t("app_title")
     %ol.nav.navbar-nav
       %li
-        %a{:href => "/customers"} Customers
+        = link_to(t(".h1"), customers_path)
       %li
-        %a{:href => "/events"} Events
+        = link_to(t(".h2"), events_path)
       %li
-        %a{:href => "/tasks"} Tasks
+        = link_to(t(".h3"), tasks_path)
       %li
-        %a{:href => "/contact"} Contact
+        = link_to(t(".h4"), contact_path)
